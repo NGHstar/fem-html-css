@@ -11,6 +11,12 @@
   font: inherit;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+h1 {font-size: var(--h1)}
+
 /* IMPORTS */
 @import url("");
 
@@ -26,8 +32,22 @@
 
 /* VARIABLES */
 :root {
-  /* title font */
-  --tfont: danablack;
-  /* content font */
-  --cfont: danamedium;
+  /* FONTS */
+  --tfont: danablack; /* title font */
+  --cfont: danamedium; /* content font */
+  /* FONT SIZES */
+  --h1: 5rem;
+  --h2: 4rem;
+  --h3: 3rem;
+  --h4: 2rem;
+  --h5: 1.8rem;
+  --h6: 1.6rem;
+  /* COLORS */
+  --primary: #f25f3a;
+  --primary-light: #fff0eb;
+  --secondary: #242d52;
+  --footer-bg: #1e1e26;
+  --card-bg: #fafafa;
+  --white: white;
+  --text-color: #97989d;
 }
