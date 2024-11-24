@@ -7,8 +7,145 @@
     <title>FEM</title>
   </head>
   <body>
-    <h1 style="font-size: var(--h1)">THIS is h1</h1>
-    <h1 style="font-size: var(--h2)">this is h2</h1>
-    <h1 style="font-size: var(--h3)">this is h3</h1>
+    <header class="header">
+      <div class="container">
+        <a href=""><img src="assets/images/logo.svg" alt="logo" /></a>
+        <nav class="header__navigation">
+          <ul aria-label="Header">
+            <li><a href="#">هزینه‌ها</a></li>
+            <li><a href="#">محصول</a></li>
+            <li><a href="#">درباره‌ما</a></li>
+            <li><a href="#">مشاغل</a></li>
+            <li><a href="#">جامعه</a></li>
+          </ul>
+        </nav>
+        <button class="button button--primary">شروع کنید</button>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="container">
+          <div class="even-columns">
+            <!-- right column -->
+            <div class="hero__content">
+              <h1 class="hero__title">
+                همه را دعوت کنید تا محصولات بهتری بسازید
+              </h1>
+              <p class="hero__description">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                استفاده از طراحان مجرب ساخته شده است.
+              </p>
+              <button class="button button--primary">شروع کنید</button>
+            </div>
+            <!-- left column -->
+            <div class="hero__charts">
+              <img src="assets/images/illustration-intro.svg" alt="charts" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- why us -->
+      <section class="why-us">
+        <div class="even-columns">
+          <div class="why-us__content">
+            <h2 class="why-us__title">تفاوت ما با دیگران چیست؟</h2>
+            <p class="why-us__description">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+              استفاده از طراحان گرافیک است.
+            </p>
+          </div>
+          <div class="why-us__benefits">
+            <ul>
+              <li>
+                <h3>پیگیری پیشرفت شرکت</h3>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز میباشد.
+                </p>
+              </li>
+              <li>
+                <h3>گزارش‌های داخلی پیشرفته</h3>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز میباشد.
+                </p>
+              </li>
+              <li>
+                <h3>تمام آن چه نیاز دارید</h3>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز میباشد.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- carousel -->
+      <section class="carousel">
+        <h2 class="carousel__title">نظرات دیگران چیست؟</h2>
+        <!-- کاروسل نظرات -->
+        <button class="button button-primary">شروع کنید</button>
+      </section>
+      <!-- cta -->
+      <section class="cta">
+        <div class="container">
+          <div class="even-columns">
+            <div class="cta__title">
+              <p>کار گروهی خود را راحت کنید</p>
+            </div>
+            <div class="cta__button">
+              <button class="button button--white">شروع کنید</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="even-columns">
+          <div class="columns-1">
+            <a href="#"><img src="assets/images/logo.svg" alt="logo" /></a>
+            <ul aria-label="social links">
+              <li><a aria-label="facebook" href="#"></a></li>
+              <li><a aria-label="youtube" href="#"></a></li>
+              <li><a aria-label="twitter" href="#"></a></li>
+              <li><a aria-label="pinterest" href="#"></a></li>
+              <li><a aria-label="instagram" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="columns-2">
+            <nav class="footer__nav">
+              <ul aria-label="Footer">
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">هزینه‌ها</a></li>
+                <li><a href="#">محصولات</a></li>
+                <li><a href="#">درباره‌ما</a></li>
+                <li><a href="#">مشاغل</a></li>
+                <li><a href="#">جامعه</a></li>
+                <li><a href="#">حریم خصوصی</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="columns-3">
+            <form action="">
+              <input type="email">
+              <button class="button button--primary">ثبت</button>
+              <p>تمامی حقوق محفوظ میباشد</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  -->
   </body>
 </html>
