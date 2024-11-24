@@ -15,10 +15,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-size: 2rem;
-}
-
 h1 {
   font-size: var(--h1);
 }
@@ -49,11 +45,11 @@ h6 {
 /* FONTS */
 @font-face {
   font-family: danablack;
-  src: url("/assets/fonts/Dana-Black.woff");
+  src: url("../assets/fonts/Dana-Black.woff");
 }
 @font-face {
-  font-family: danamdeium;
-  src: url("/assets/fonts/Dana-Medium.woff");
+  font-family: danamedium;
+  src: url("../assets/fonts/Dana-Medium.woff");
 }
 
 /* VARIABLES */
@@ -70,6 +66,7 @@ h6 {
   --h6: 1.6rem;
   /* COLORS */
   --primary: #f25f3a;
+  --primary-hover: #e67b68;
   --primary-light: #fff0eb;
   --secondary: #242d52;
   --footer-bg: #1e1e26;
@@ -87,4 +84,72 @@ h6 {
     --h5: 2rem;
     --h6: 1.8rem;
   }
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.padding-block-long {
+  padding-block: 64px;
+}
+
+.padding-block-medium {
+  padding-block: 32px;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+/* GENERAL STYLING */
+body {
+  font-size: 2rem;
+  font-family: var(--cfont);
+  color: var(--secondary);
+}
+
+/* BUTTON */
+.button {
+  border-radius: 100vmax;
+  padding: 1.2rem 3.5rem;
+  font-family: var(--cfont);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 1em 1em -1em var(--primary);
+}
+
+.button--shadow-less {
+  box-shadow: none;
+}
+
+.button--primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.button--primary:hover,
+.button--primary:focus-visible {
+  background-color: var(--primary-hover);
+}
+
+.button--white {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.button--white:hover,
+.button--white:focus-visible {
+  background-color: var(--primary-light);
 }
