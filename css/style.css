@@ -1,3 +1,11 @@
+/* IMPORTS */
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/why-us.css");
+@import url("sections/carousel.css");
+@import url("sections/cta.css");
+@import url("sections/footer.css");
+
 /* CSS RESET */
 *,
 *::before,
@@ -13,6 +21,10 @@
 
 html {
   font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
@@ -33,14 +45,6 @@ h5 {
 h6 {
   font-size: var(--h6);
 }
-
-/* IMPORTS */
-@import url("sections/header.css");
-@import url("sections/hero.css");
-@import url("sections/why-us.css");
-@import url("sections/carousel.css");
-@import url("sections/cta.css");
-@import url("sections/footer.css");
 
 /* FONTS */
 @font-face {
@@ -117,6 +121,18 @@ body {
   font-size: 2rem;
   font-family: var(--cfont);
   color: var(--secondary);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* BUTTON */
