@@ -76,7 +76,7 @@ h6 {
   --footer-bg: #1e1e26;
   --card-bg: #fafafa;
   --white: white;
-  --text-color: #97989d;
+  --text-color: #6a6c77;
 }
 
 @media (min-width: 50em) {
@@ -121,6 +121,19 @@ body {
   font-size: 2rem;
   font-family: var(--cfont);
   color: var(--secondary);
+}
+
+.flow * + * {
+  margin-top: 1.4em;
+}
+
+p:not(class) {
+  color: var(--text-color);
+  max-width: 34ch;
+}
+
+p[data-width="wide"] {
+  max-width: 50ch;
 }
 
 .visually-hidden {
