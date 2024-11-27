@@ -1,0 +1,41 @@
+.cta__title p {
+  font-size: var(--h3);
+  font-family: var(--tfont);
+  color: var(--white);
+}
+
+.cta__button {
+  margin-right: auto;
+}
+
+.cta {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--primary);
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../../assets/images/bg-tablet-pattern.svg"),
+    url("../../assets/images/bg-tablet-pattern.svg");
+  background-position: -20rem 2rem, 120rem -72rem;
+
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.cta .container > div {
+  align-items: center;
+}
+
+@media (max-width: 50em) {
+  .cta__button {
+    margin: 2rem auto 0;
+  }
+  .cta__title {
+    text-align: center;
+  }
+}

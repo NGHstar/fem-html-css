@@ -7,7 +7,10 @@
     <title>FEM</title>
   </head>
   <body>
-    <header class="header padding-block-long">
+    <header
+      class="header padding-block-long"
+      style="background-color: antiquewhite"
+    >
       <div class="container">
         <a href=""
           ><img class="header__logo" src="assets/images/logo.svg" alt="logo"
@@ -67,7 +70,10 @@
         </div>
       </section>
       <!-- why us -->
-      <section class="why-us padding-block-long">
+      <section
+        class="why-us padding-block-long"
+        style="background-color: antiquewhite"
+      >
         <div class="container">
           <div class="even-columns">
             <div class="why-us__content flow">
@@ -124,7 +130,7 @@
         <div class="container">
           <div class="even-columns">
             <div class="cta__title">
-              <p>کار گروهی خود را راحت کنید</p>
+              <p>کار گروهی خود را آسان کنید</p>
             </div>
             <div class="cta__button">
               <button class="button button--white">شروع کنید</button>
@@ -136,18 +142,64 @@
     <!-- Footer -->
     <footer class="footer padding-block-medium">
       <div class="container">
-        <div class="even-columns">
-          <div class="columns-1">
-            <a href="#"><img src="assets/images/logo.svg" alt="logo" /></a>
-            <ul aria-label="social links">
-              <li><a aria-label="facebook" href="#"></a></li>
-              <li><a aria-label="youtube" href="#"></a></li>
-              <li><a aria-label="twitter" href="#"></a></li>
-              <li><a aria-label="pinterest" href="#"></a></li>
-              <li><a aria-label="instagram" href="#"></a></li>
+        <div class="footer__wrapper">
+          <div class="footer__column">
+            <a href="#"
+              ><img
+                class="footer__logo"
+                src="assets/images/logo-white.svg"
+                alt="logo"
+            /></a>
+            <ul class="footer__social-links">
+              <li>
+                <a href="#">
+                  <svg class="social__icon">
+                    <use
+                      xlink:href="assets/images/social-icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="social__icon">
+                    <use
+                      xlink:href="assets/images/social-icons.svg#icon-youtube"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="social__icon">
+                    <use
+                      xlink:href="assets/images/social-icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="social__icon">
+                    <use
+                      xlink:href="assets/images/social-icons.svg#icon-pinterest"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="social__icon">
+                    <use
+                      xlink:href="assets/images/social-icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
+            <p class="footer__copyright">تمامی حقوق محفوظ میباشد</p>
           </div>
-          <div class="columns-2">
+          <div class="footer__column">
             <nav class="footer__nav">
               <ul aria-label="Footer">
                 <li><a href="#">خانه</a></li>
@@ -160,14 +212,15 @@
               </ul>
             </nav>
           </div>
-          <div class="columns-3">
+          <div class="footer__column">
+            <p class="footer__subscribe-title">ثبت‌نام در خبرنامه</p>
             <form action="">
-              <input type="email" />
+              <input type="email" placeholder="ایمیل خود را وارد کنید" />
               <button class="button button--primary button--shadow-less">
                 ثبت
               </button>
-              <p>تمامی حقوق محفوظ میباشد</p>
             </form>
+            <p class="footer__copyright">تمامی حقوق محفوظ میباشد</p>
           </div>
         </div>
       </div>
