@@ -27,6 +27,15 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--tfont);
+}
+
 h1 {
   font-size: var(--h1);
 }
@@ -49,11 +58,11 @@ h6 {
 /* FONTS */
 @font-face {
   font-family: danablack;
-  src: url("../assets/fonts/Dana-Black.woff");
+  src: url("../assets/fonts/DanaFaNum-Bold.woff");
 }
 @font-face {
   font-family: danamedium;
-  src: url("../assets/fonts/Dana-Medium.woff");
+  src: url("../assets/fonts/DanaFaNum-Medium.woff");
 }
 
 /* VARIABLES */
@@ -62,12 +71,12 @@ h6 {
   --tfont: danablack; /* title font */
   --cfont: danamedium; /* content font */
   /* FONT SIZES */
-  --h1: 5rem;
-  --h2: 4rem;
-  --h3: 3rem;
+  --h1: 3.5rem;
+  --h2: 3rem;
+  --h3: 2.8rem;
   --h4: 2rem;
-  --h5: 1.8rem;
-  --h6: 1.6rem;
+  --h5: 2.3rem;
+  --h6: 2.1rem;
   /* COLORS */
   --primary: #f25f3a;
   --primary-hover: #e67b68;
@@ -81,8 +90,8 @@ h6 {
 
 @media (min-width: 50em) {
   :root {
-    --h1: 6rem;
-    --h2: 5rem;
+    --h1: 4rem;
+    --h2: 3.5rem;
     --h3: 4rem;
     --h4: 3rem;
     --h5: 2rem;
@@ -118,13 +127,9 @@ h6 {
 
 /* GENERAL STYLING */
 body {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: var(--cfont);
   color: var(--secondary);
-}
-
-.flow * + * {
-  margin-top: 1.4em;
 }
 
 p:not(class) {
