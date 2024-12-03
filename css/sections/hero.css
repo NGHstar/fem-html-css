@@ -1,0 +1,17 @@
+.hero__charts img {
+  width: 100%;
+}
+
+.hero__content * + * {
+  padding-block: 2rem;
+}
+
+.hero__title {
+  font-size: 3rem;
+}
+
+@media (max-width: 50em) {
+  .hero__charts img {
+    margin-top: 6rem;
+  }
+}

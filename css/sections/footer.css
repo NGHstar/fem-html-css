@@ -37,9 +37,6 @@
   color: var(--primary-hover);
 }
 
-.footer__column {
-}
-
 .footer__wrapper > :nth-child(1) {
   grid-area: logo;
 }
@@ -128,7 +125,7 @@
 
 .footer__subscribe-title {
   text-align: right;
-  margin-right: 1rem;
+  margin-right: 9rem;
   margin-top: 2rem;
   width: 100%;
 }

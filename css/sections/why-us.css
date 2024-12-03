@@ -51,7 +51,7 @@
     rgba(0, 0, 0, 0) 0%,
     rgb(255, 221, 215) 100%
   );
-  inset: 0 0 0 -6vw;
+  inset: 0;
   /* overflow: hidden; */
   border-radius: 100vw;
 }
