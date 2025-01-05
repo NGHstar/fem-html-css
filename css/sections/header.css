@@ -6,6 +6,18 @@
   display: none;
 }
 
+.header__mobile-nav-toggle.expanded .header__hamburger-icon {
+  display: none;
+}
+
+.header__mobile-nav-toggle.expanded .header__close-icon {
+  display: block;
+  margin-bottom: 1rem;
+  position: fixed;
+  top: 7rem;
+  left: 5rem;
+}
+
 .header__mobile-nav-toggle .header__close-icon {
   display: none;
 }
@@ -54,6 +66,7 @@
 
   .header.expanded::before {
     content: "";
+    z-index: 98;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
     inset: 0;
     position: fixed;
@@ -65,6 +78,7 @@
     max-width: 250px;
     inset: 12rem 4rem auto;
     margin-right: auto;
+    z-index: 100;
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: 0 0 20px 0 gainsboro;
@@ -84,6 +98,6 @@
 
   .header__mobile-nav-toggle {
     display: block;
-    z-index: 10;
+    z-index: 99;
   }
 }

@@ -5,6 +5,7 @@ const headerNavigation = document.querySelector(".header__navigation");
 headerNavToggleBtn.addEventListener("click", () => {
   headerNavigation.classList.toggle("expanded");
   header.classList.toggle("expanded");
+  headerNavToggleBtn.classList.toggle("expanded");
 });
 
 // کد کاروسل

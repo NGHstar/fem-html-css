@@ -50,6 +50,14 @@
   margin-bottom: 1rem;
 }
 
+.swiper .carousel__nav_button {
+  color: var(--primary);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary) !important;
+}
+
 @media (max-width: 50em) {
   .swiper .carousel__nav_button {
     display: none;

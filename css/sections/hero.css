@@ -1,17 +1,54 @@
-.hero__charts img {
-  width: 100%;
+.hero__charts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+
+  transform: scaleX(-1);
+  transform: scaleY(-1);
+  aspect-ratio: 1/1.5;
+  max-height: 100vh;
+  background-image: url("../../assets/images/bg-tablet-pattern.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
-.hero__content * + * {
-  padding-block: 2rem;
+.hero__charts img {
+  width: 100%;
+  max-width: 50rem;
 }
 
 .hero__title {
   font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.hero__description {
+  padding-bottom: 2.5rem;
+}
+
+@media (min-width: 50em) {
+  .hero__charts::before {
+    top: -50%;
+    left: -25%;
+  }
 }
 
 @media (max-width: 50em) {
-  .hero__charts img {
-    margin-top: 6rem;
+  .hero__charts {
+    margin-top: -5rem;
+    order: -1;
+  }
+
+  .hero {
+    display: grid;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__content {
+    justify-items: center;
   }
 }
