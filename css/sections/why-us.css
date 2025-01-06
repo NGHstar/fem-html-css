@@ -18,22 +18,6 @@
   padding: 0 1rem;
 }
 
-.why-us::before {
-  content: "";
-  position: absolute;
-  bottom: 70%;
-  right: -240px;
-  width: 400px;
-  transform: scaleY(-1);
-  aspect-ratio: 1/1.5;
-  max-height: 100vh;
-  background-image: url("../../assets/images/bg-tablet-pattern.svg");
-  background-position: top right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
 .why-us__benefits ul {
   justify-items: center;
   list-style: none;

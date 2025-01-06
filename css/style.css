@@ -20,7 +20,6 @@
 }
 
 html {
-  max-width: 100%;
   overflow-x: hidden;
   font-size: 62.5%;
 }
@@ -107,6 +106,12 @@ h6 {
   padding: 0 2rem;
 }
 
+@media (min-width: 50em) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 .even-columns {
   display: grid;
   gap: 1.6rem;
@@ -136,7 +141,6 @@ h6 {
 
 /* GENERAL STYLING */
 body {
-  max-width: 100%;
   overflow-x: hidden;
   font-size: 1.7rem;
   font-family: var(--cfont);

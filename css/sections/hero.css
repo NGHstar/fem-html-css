@@ -1,20 +1,3 @@
-.hero__charts::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60%;
-
-  transform: scaleX(-1);
-  transform: scaleY(-1);
-  aspect-ratio: 1/1.5;
-  max-height: 100vh;
-  background-image: url("../../assets/images/bg-tablet-pattern.svg");
-  background-position: top right;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
 .hero__charts img {
   width: 100%;
   max-width: 50rem;
