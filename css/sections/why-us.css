@@ -13,6 +13,9 @@
 /* why-us */
 .why-us {
   position: relative;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .why-us::before {
@@ -21,7 +24,6 @@
   bottom: 70%;
   right: -240px;
   width: 400px;
-
   transform: scaleY(-1);
   aspect-ratio: 1/1.5;
   max-height: 100vh;
@@ -58,7 +60,7 @@
 }
 
 .why-us__benefit-content {
-  padding-right: 0.5rem;
+  padding-right: 0.2rem;
   grid-column: 1/-1;
 }
 
